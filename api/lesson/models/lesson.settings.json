@@ -1,0 +1,43 @@
+{
+  "kind": "collectionType",
+  "collectionName": "lessons",
+  "info": {
+    "name": "Lesson",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "letters": {
+      "collection": "letter",
+      "via": "lessons",
+      "dominant": true
+    },
+    "order_num": {
+      "type": "integer"
+    },
+    "words": {
+      "via": "lesson",
+      "collection": "word"
+    },
+    "slides": {
+      "collection": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    }
+  }
+}

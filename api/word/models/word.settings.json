@@ -1,0 +1,28 @@
+{
+  "kind": "collectionType",
+  "collectionName": "words",
+  "info": {
+    "name": "word"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "value": {
+      "type": "string"
+    },
+    "hint": {
+      "type": "string"
+    },
+    "transliteration": {
+      "type": "string"
+    },
+    "lesson": {
+      "via": "words",
+      "model": "lesson"
+    }
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "kind": "collectionType",
+  "collectionName": "letters",
+  "info": {
+    "name": "letter"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "value": {
+      "type": "string"
+    },
+    "description": {
+      "type": "string"
+    },
+    "transliteration": {
+      "type": "string"
+    },
+    "file": {
+      "plugin": "upload",
+      "model": "file"
+    },
+    "lessons": {
+      "via": "letters",
+      "collection": "lesson"
+    }
+  }
+}
