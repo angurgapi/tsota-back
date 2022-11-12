@@ -16,8 +16,8 @@
       "type": "string"
     },
     "letters": {
-      "collection": "letter",
       "via": "lessons",
+      "collection": "letter",
       "dominant": true
     },
     "order_num": {
@@ -38,6 +38,10 @@
       "plugin": "upload",
       "required": false,
       "pluginOptions": {}
+    },
+    "files": {
+      "via": "lessons",
+      "collection": "files"
     }
   }
 }
