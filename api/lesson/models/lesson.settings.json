@@ -16,8 +16,8 @@
       "type": "string"
     },
     "letters": {
-      "collection": "letter",
       "via": "lessons",
+      "collection": "letter",
       "dominant": true
     },
     "order_num": {

@@ -1,8 +1,8 @@
 {
   "kind": "collectionType",
-  "collectionName": "letters",
+  "collectionName": "files",
   "info": {
-    "name": "letter",
+    "name": "files",
     "description": ""
   },
   "options": {
@@ -12,25 +12,26 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "value": {
-      "type": "string"
-    },
-    "description": {
-      "type": "string"
-    },
-    "transliteration": {
+    "name": {
       "type": "string"
     },
     "file": {
-      "model": "file",
+      "collection": "file",
       "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
       "plugin": "upload",
       "required": false,
       "pluginOptions": {}
     },
-    "lessons": {
-      "via": "letters",
-      "collection": "lesson"
+    "copyright": {
+      "type": "string"
+    },
+    "image_url": {
+      "type": "string"
     }
   }
 }
