@@ -27,21 +27,8 @@
       "via": "lesson",
       "collection": "word"
     },
-    "slides": {
-      "collection": "file",
-      "via": "related",
-      "allowedTypes": [
-        "images",
-        "files",
-        "videos"
-      ],
-      "plugin": "upload",
-      "required": false,
-      "pluginOptions": {}
-    },
-    "files": {
-      "via": "lessons",
-      "collection": "files"
+    "description": {
+      "type": "richtext"
     }
   }
 }

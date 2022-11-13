@@ -2,7 +2,8 @@
   "kind": "collectionType",
   "collectionName": "words",
   "info": {
-    "name": "word"
+    "name": "word",
+    "description": ""
   },
   "options": {
     "increments": true,
@@ -23,6 +24,9 @@
     "lesson": {
       "via": "words",
       "model": "lesson"
+    },
+    "image_url": {
+      "type": "string"
     }
   }
 }
