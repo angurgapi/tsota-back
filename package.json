@@ -1,8 +1,8 @@
 {
   "name": "tsota-back",
   "private": true,
-  "version": "0.1.0",
-  "description": "A Strapi application",
+  "version": "1.1.0",
+  "description": "georgian learning app",
   "scripts": {
     "develop": "strapi develop",
     "start": "strapi start",
@@ -23,14 +23,14 @@
     "strapi-connector-mongoose": "3.6.10"
   },
   "author": {
-    "name": "A Strapi developer"
+    "name": "angurgapi"
   },
   "strapi": {
     "uuid": "2499d775-eb9c-4159-90aa-876951f6b53a"
   },
   "engines": {
     "node": ">=10.16.0",
-    "npm": ">6.0.0"
+    "npm": ">=6.0.0"
   },
   "license": "MIT"
 }
